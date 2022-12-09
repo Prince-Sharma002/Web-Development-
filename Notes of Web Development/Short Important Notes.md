@@ -6,3 +6,4 @@
   we can change height and width and next element placed next to in inline-block element.
 - To change position of element to center which have already width set/specify you can use margin
   e.g - margin : 0 auto 0 auto ; is the css code attribute you can use on the element 
+- font-variant attribute for fonts is use to convert all lowercase alphabets in uppercase but uppercase alphabets are bigger in size. 
