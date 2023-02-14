@@ -1,0 +1,155 @@
+/* navbar */
+
+/* generally i like to use percentage in spacing and sizing */
+
+
+.navbar{
+  margin-bottom: 9rem;
+}
+
+/* to remove extra white space on right of website */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* coverDiv */
+.coverDiv{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/11517347/pexels-photo-11517347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 15rem;
+  padding-top: 3%;
+}
+
+.header{
+  font-size: 350%;
+  letter-spacing: 2px;
+}
+.callusText{
+  opacity: 80%;
+}
+
+.headerPara{
+  opacity: 80%;
+  margin-bottom: 2%;
+  font-family: Averia Serif Libre;
+  font-size: 1rem;
+}
+
+
+.testbutton {
+  font-family: helvetica;
+  font-weight: bold;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  background: #F28838;
+  text-decoration: none;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.testbutton:hover {
+  color: #000000 !important;
+  background: #FFCC00;
+}
+/* BEST OFFERS */
+.bestOffer{
+  padding-top: 12%;
+  text-align: center;
+}
+
+
+
+.bestofferRow{
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+.offerCol{
+
+}
+
+.offerImg{
+    width: 20rem;
+    height: 15rem;
+    padding-bottom: 4%;
+    padding-bottom: 0px !important;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* how to remove extra default margin in header */
+h6{
+  margin-top: 3% !important;
+  margin-bottom: -1px !important;
+}
+
+.offerPara{
+
+  margin-top: 0px;
+  margin-bottom: 10% !important ;
+}
+
+/* chooseDiv */
+.chooseDiv{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 10% 10%;
+}
+
+
+.offerRow{
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+
+
+.fa-solid{
+  color: white;
+}
+.fa-solid:hover {
+  color: #EDEDED;
+}
+.choosePara{
+  opacity: 80%;
+}
+hr{
+  border: solid white 6px;
+}
+/* sayDiv */
+
+.sayDiv{
+  text-align: center;
+  padding: 14% 15%;
+}
+
+
+.name{
+  color:#F28838;
+}
+.footerDiv{
+  text-align: center;
+  margin-bottom: -1px !important;
+}
+.footerpara{
+  opacity: 70%;
+}

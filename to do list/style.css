@@ -1,0 +1,50 @@
+body{
+    font-family: Unbounded;
+    padding: 6rem;
+    text-align: center;
+    justify-content: center;
+    justify-content: center;
+    background-color: #FFFBF5 !important;
+}
+
+.textInput{
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: Lobster;
+    font-size: 6rem;
+}
+
+#op1{
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 2rem;
+    letter-spacing: 0.1rem;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.del{
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+#heading{
+    display: none;
+    font-family: Aboreto;
+    font-size: 1.5rem;
+}
+
+#refershBtn{
+    display: none;
+}
+.output{
+    color: black ;
+}

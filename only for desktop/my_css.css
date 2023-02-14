@@ -1,0 +1,253 @@
+body{
+		 margin:0;
+    font-family:Libre Baskerville;
+    color:#8b73d2;
+}
+
+a{
+   text-decoration:none;
+   color:#e12929;
+   font-family:special elite;
+}
+
+a:hover{
+				text-decoration:underline;
+				color:#be00ff;
+}
+.upper{
+				width:100%;
+				background-color:#39d0d0;
+				position:relative;
+				margin-top:0px;
+				padding-top:5px;
+}
+#sun{
+				position:absolute;
+				right:50px;
+				top:100px;
+}
+#sun2{
+				position:absolute;
+				left:50px;
+				top:20px;
+}
+#rain{text-align:center;}
+#bow{
+				width:50%;
+				position:relative;	
+				height:325px;			
+}
+#bird{
+				width:5%;
+				height:20px;
+				position:absolute;
+				right:30px;
+				top:300px;
+}
+h1{text-align:center;
+   margin-bottom:2px;
+   margin-top:2px;
+		color:#00a4d3;
+		font-family:Bilbo Swash Caps;
+		font-size:2.5rem;		
+}
+span{
+				text-decoration:underline;
+				margin-left:3px;
+}
+#p1{
+				text-align:center;
+				margin-top:2px;
+				color:#1f77ad;
+				font-family:Amatic SC;
+}
+
+#intro{
+				text-align:center;
+				margin-top:0px;
+				margin-bottom:30px;
+				font-family:merienda;	
+				}
+
+font{
+				font-size:60px;
+}
+#prince{
+				width:13%;
+				height:170px;
+				border:2px solid #ffffff;
+				border-radius:20px;
+				margin-bottom:3px;
+				margin-top:40px;
+}
+#skills{
+				text-align:center;
+				display:block;
+}
+h2{
+				font-family:cinzel;
+				color:#e12929;
+	}
+#skill{
+				font-family:cinzel;
+				color:#e12929;
+				margin-top:150px;
+				margin-bottom:150px;
+				font-size:60px;
+}
+#web{
+				margin-top:50px;
+				margin-bottom:50px;
+				width:100%;
+		   float:left;
+		   line-height:1.7;
+}
+#web1{
+				width:400px;
+				height:400px;
+				float:right;
+				margin-left:70px;
+				margin-right:20px;
+				position:relative;
+				bottom:70px;
+}
+#python{
+				margin-top:100px;
+				margin-bottom:50px;
+		   width:100%;
+		   float:right;
+		   line-height:1.7;
+}
+#python1{
+				width:400px;
+				height:400px;
+				float:left;
+				margin-right:70px;
+				margin-left:20px;
+					position:relative;
+				bottom:30px;
+}
+#science{
+				margin-top:100px;
+				margin-bottom:50px;
+		   line-height:1.7;
+		   width:100%;
+		   float:left;
+}
+#science1{
+				width:400px;
+				height:400px;
+				float:right;
+				margin-left:70px;
+				margin-right:20px;
+			 position:relative;
+				bottom:40px;
+}
+#car{
+				margin-top:50px;
+				margin-bottom:100px;
+		   width:100%;
+		   float:right;
+		   line-height:1.7;
+}
+#car1{
+				width:400px;
+				height:400px;
+				float:left;
+				margin-right:70px;
+				margin-left:20px;
+					position:relative;
+				bottom:70px;
+}
+.hr{
+				width:50%;
+				float:left;
+				color:red;
+				margin-left:0;
+}
+.hr1{
+				width:50%;
+				float:right;
+				color:red;
+				margin-right:0;
+}
+
+#footer{
+				background-color:#8cafc1;
+				position:relative;
+				top:500px;
+				width:100%;
+				heigh:100px;
+				margin-right:100px;
+}
+#neech{color:#e8ffe8;}
+#footer2{
+				background-color:#ff735d;
+				width:100%;
+				color:#ffffff;
+				text-align:center;
+				margin-bottom:0;
+				font-family:serif;
+				font-size:40px;
+}
+
+h3{
+				color:#d04239;
+				text-decoration:underline;
+				font-family:amatic sc;
+}
+
+#span1{
+				color:#c36a6a;
+				margin-left:4px;
+				position:relative;
+				top:50px;
+}
+.span2{font-family:monospace;
+ 				font-size:10px;
+				text-decoration:none;
+				position:relative;
+				bottom:20px;
+				border:1px solid #d1ffdc;
+				background-color:#87ff74;
+				padding:5px 10px;
+}
+.span3{
+				font-family:monospace;
+ 				font-size:10px;
+				text-decoration:none;
+				position:relative;
+				bottom:15px;
+				left:4px;
+				border:1px solid #d1ffdc;
+				background-color:#87ff74;
+				padding:5px 10px;
+}
+#home{ 
+				margin-left:4px;
+}
+
+
+.name{
+				text-decoration:none;
+				background-color:#d1ffdc;
+				padding:20px 100px 10px 100px;
+				border:1px solid #8bc7ff;
+}
+
+.lastspan{
+				text-decoration:none;
+				background-color:#ff735d;
+				padding:5px 10px;
+				position:relative;
+				top:50px;
+				border-top:2px solid #c36a6a;
+				border-bottom:2px solid #c36a6a;
+				border-right:2px solid #c36a6a;
+}
+
+.lastdiv{
+				background-color:#dcd1ff;
+				padding:60px 10px; 20px 10px;
+				text-align:center;
+}
