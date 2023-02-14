@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+       <link rel="stylesheet" href="style.css">
+       <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+ 
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
+    
+    <style>
+
+body{
+    text-align: center;
+    font-family: Overlock;
+    margin: 0px;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 6rem !important;
+    font-family: Amatic SC;
+}
+
+.gInput{
+    font-style: italic;
+    color: rgb(115 115 115);
+    letter-spacing: 2px;
+}
+
+.add-button{
+    font-family: Staatliches;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-family: Staatliches;
+    color: rgb(51, 51, 51);
+}
+
+.ItemDiv{
+    letter-spacing: 2px;
+    border: 2px solid rgb(95, 87, 87) !important;
+}
+
+ul{
+    list-style-type: none;
+    font-style: italic;
+    color: rgb(77, 77, 77);
+}
+
+.delete-button{
+    font-family: Staatliches;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    border-style: solid;
+    padding: 0.21rem;
+    border-color: white white white rgb(14 165 233);
+}
+
+.delete-button:hover
+{
+    background-color: rgb(194, 24, 61);
+    color: white;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+.check{
+    text-decoration-line: line-through;
+}
+
+.flag {
+    display: table;
+    width: 100%;
+}
+
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <h1 class="mt-10 mx-auto">TO-DO</h1>
+    <div class="container mx-auto">
+        <form class="gForm px-4 py-1 my-2 place-content-center">
+
+            <input type="text" class="gInput  placeholder:italic placeholder:text-slate-400 
+            block bg-white w-1/2 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm 
+            focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm mx-auto 
+            w-full md:w-3/4 lg:w-1/2  sm:text-center md:text-left" placeholder="Add To-Do">
+            
+            <button class="add-button container mx-auto mt-5  border-4 border-rose-600 w-1/6 shadow-lg  
+            hover:bg-rose-600 hover:text-white rounded ..." type="submit"> Add   </button>
+
+        </form>
+
+
+        <div class="alert primary-alert lg:w-1/3 md:w-1/2  sm:-full py-2 mt-20">
+            <h3> completed task dont have blue check </h3>
+            <a class="close ">&times;</a>
+        </div>
+
+
+
+        <h2 class="GroceryList text-neutrsl-800 tracking-wider  text-3xl mb-2 font-bold mt-10"> To-Do List</h2>
+
+
+          
+
+        <div class="ItemDiv  border-4 w-1/2  mx-auto p-3 w-full md:w-3/4 lg:w-1/2">
+            <ul class="gItems">
+                <li data-key="123445678" class="item">
+                    <input class="checkbox form-control" type="checkbox" name="checkbox" id="gcheck">
+                    Demo
+                    <button class="delete-button"  type="button"> Del </button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+<script>
+
+$(".close").click(function() {
+  $(this)
+    .parent(".alert")
+    .fadeOut();
+});
+
+
+const gform = document.querySelector(" .gForm");
+const ginput = document.querySelector(" .gInput");
+const gitemList = document.querySelector(" .gItems");
+
+// item will be store in array 
+let ItemList = [];
+
+let x = 0;
+localStorage.setItem( "c" , x);
+
+
+
+// add Eventlistner on form
+gform.addEventListener( "click" , function(event){
+
+    event.preventDefault();
+    addToG( ginput.value );
+
+});
+
+// addToG function
+function addToG( element ){
+    if( element !== ""){
+
+        const item = {
+            id : Date.now(),
+            name : element,
+            check : false
+        }; 
+
+
+    ItemList.push( item );
+
+    addInLocalStorage( ItemList );
+
+    ginput.value = "";
+
+    }
+}
+
+//  display function
+function display( ItemList ){
+
+    gitemList.innerHTML = "";
+    ItemList.forEach( function(item){
+        // create li element
+        const li = document.createElement("li");
+
+        li.setAttribute( "data-key" , item.id);
+
+        let checked = null;
+        if( item.check ){
+            checked = "checked";
+        }
+
+        
+        if( item.check === true ){
+            li.classList.add("checked");
+            li.classList.add("check");
+        }
+
+            
+
+
+        li.innerHTML = `
+
+                <input type="checkbox" class="form-checkbox text-pink-600" ${checked}>
+                ${item.name}
+                <button class="delete-button"  type="button"> Del </button>
+                `;
+        
+
+        gitemList.append(li);
+
+    });
+
+    if(gitemList.innerHTML === ""){
+        gitemList.innerHTML = "Empty";
+    }
+
+    
+}
+
+
+//  store in local storage
+function addInLocalStorage( ItemList ){
+    localStorage.setItem( "ItemList" , JSON.stringify(ItemList) );
+    display(ItemList);
+}
+
+
+// getFrom Local storage when page is refersh
+function  getFromLocalStorage(){
+
+    const refernce = localStorage.getItem( "ItemList" );
+    if( refernce ){
+        ItemList = JSON.parse(refernce);
+        display( ItemList); 
+    }
+}
+
+getFromLocalStorage();
+
+// deleteItem function 
+function deleteItem( id ){
+    ItemList = ItemList.filter( function(item){
+        return item.id != id;    // it will give those element which have differnt id 
+    } );
+
+    addInLocalStorage( ItemList );
+}
+
+// toggle in checkbox  
+function toggle( id  ){
+    ItemList.forEach( function(  item  ) {
+        if( item.id == id ){
+            x = x+1;
+            if( x == 1 ){
+                alert("double click to remove strike");
+            }
+            item.check = !item.check;
+        }
+
+    });
+
+    addInLocalStorage(ItemList);
+}
+
+// finding delete by eventListner in form
+gitemList.addEventListener("click" , function(event) {
+
+    if(event.target.checked){
+        toggle( event.target.parentElement.getAttribute("data-key") );
+    }
+
+    if( event.target.classList.contains("delete-button") ){
+        deleteItem( event.target.parentElement.getAttribute('data-key') );
+    }
+});
+
+
+
+    </script>
+</body>
+</html>

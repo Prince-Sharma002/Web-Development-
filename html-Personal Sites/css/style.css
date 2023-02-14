@@ -1,0 +1,25 @@
+hr{
+  border-style: none;
+  border-top: solid;
+  width : 50%;
+  color: red;
+}
+
+body{
+  background-color: #EFF5F5;
+}
+
+
+h1{
+  color: #46C2CB;
+}
+
+h3{
+  color: #46C2CB;
+  font-style: italic;
+}
+
+
+img{
+  border-radius: 100%;
+}
