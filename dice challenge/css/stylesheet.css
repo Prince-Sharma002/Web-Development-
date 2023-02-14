@@ -1,0 +1,28 @@
+body{
+  text-align: center;
+  background-color: antiquewhite;
+  font-size: 3rem;
+}
+
+h1{
+  color: #DE1414;
+}
+
+.testbutton {
+  font-family: helvetica;
+  font-weight: bold;
+  color: #FFFFFF !important;
+  font-size: 17px;
+  text-shadow: 0px 0px 0px #DE1414;
+  box-shadow: 1px 1px 1px #FFFFFF;
+  padding: 10px 25px;
+  border-radius: 16px;
+  border: 2px solid #000000;
+  background: #EE2821;
+}
+.testbutton:hover {
+  color: #FFFFFF !important;
+  background: #000000;
+}
+
+

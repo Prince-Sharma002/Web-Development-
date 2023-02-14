@@ -1,0 +1,41 @@
+.cursor {
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #f44336;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+.follow_cursor{
+    transition: transform 0.1s;
+    width: 7px;
+    height: 7px;
+    border-radius: 1px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+html{
+    cursor: none;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: Unbounded;
+    color: black;
+}
+#box{
+    background-color: #000000;
+    width: 1000px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

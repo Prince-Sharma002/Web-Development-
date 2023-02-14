@@ -1,0 +1,171 @@
+body{
+    text-align: center;
+    justify-content: center;
+}
+
+.parentDiv{
+    padding: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+
+h1{
+    margin-bottom: 10% !important;
+    font-family: Rubik Vinyl;
+    color: aqua;
+}
+
+h2{
+    margin-bottom: 0%;
+}
+
+.greating{
+    font-family: Sacramento;
+    color: #f44336;
+}
+
+.childDiv{
+    width: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.dateDiv{
+    padding: 10%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1px;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    
+}
+
+.timeDiv{
+    padding: 10%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 0%;
+}
+
+.month{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid;
+    padding: 20px;
+}
+
+.month:hover{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.min{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.min:hover{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.date{
+    border: 1px solid;
+    padding: 20px;
+}
+.date:hover{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+
+.year{
+    border: 1px solid;
+    padding: 20px;
+}
+.year:hover{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+
+.hour{
+    border: 1px solid;
+    padding: 20px;
+}
+.hour:hover{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.min{
+    border: 1px solid;
+    padding: 20px;
+}   
+.min:hover{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.sec{
+    border: 1px solid;
+    padding: 20px;
+}
+.sec:hover{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+
+/* cursor */
+.cursor {
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #f44336;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+
+html{
+    cursor: none;
+}
+
+body{
+    text-align: center;
+}
+

@@ -1,0 +1,172 @@
+body{
+  background-color: white;
+  margin: 0px;
+  text-align: center;
+}
+
+.header{
+  background-color: #EFF5F5;
+}
+
+
+/* 16px in default browser = 1em = 100% */
+/* using % in size prevent from strching of image */
+#mountain{
+  width: 100%;
+  height: 500%;
+}
+
+
+/* I use absolute for positioning heading inside header div */
+h1{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  color: #EB6440;
+  font-size: 4em;
+  font-family: Sacramento;
+}
+
+h2{
+  position: absolute;
+  width: 100%;
+
+  /*  margin-top - even when size of h1 changes h2 will remain at its correct position  */
+  margin-top: 13em;
+  color: #EB6440;
+  font-size: 0.9em;
+  font-family: Major Mono Display;
+}
+
+/* INTRO STYLE */
+.intro{
+  background-color:#EFF5F5  ;
+  border-radius: 5%;
+  padding: 100px;
+  border: solid;
+  border-color: #497174;
+}
+
+.me{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#intro-para{
+  font-family: Klee One;
+  color: #497174;
+  font-weight: bold;
+}
+
+/* skills */
+#html{
+  width: 30%;
+  height: 30%;
+
+  /* use float to wrap this on left and all other content to its right */
+  /* to remove float property you can use clear attribute */
+  float: left;
+}
+
+
+#camera{
+  width: 30%;
+  height: 30%;
+  float: right;
+}
+#signposts{
+  width: 30%;
+  height: 30%;
+  float: left;
+}
+
+.skills{
+  line-height: 2;
+}
+
+.skillDiv{
+  font-family: Titillium Web;
+  width: 50%;
+  margin: 300px auto 300px auto;
+  text-align: left;
+  line-height: 2;
+  border: 2px solid #497174;
+  padding: 100px;
+}
+
+
+#web-Heading{
+  margin-left: 15em;
+  color: #EB6440;
+}
+#webPara{
+  margin-left: 15em;
+  color: #497174;
+}
+
+#camera-Heading{
+  margin-left: 3em;
+  margin-right: 15em;
+  color: #EB6440;
+}
+#cameraPara{
+  margin-right: 15em;
+  color: #497174;
+}
+
+#travel-Heading{
+  margin-left: 15em;
+  color: #EB6440;
+}
+#travelPara{
+  color: #497174;
+  margin-left: 15em;
+}
+
+
+/* footer */
+.footer{
+  background-color:#EFF5F5;
+  border-radius: 5%;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  border: solid;
+  border-color: #497174;
+}
+
+#footerHeading{
+  font-family:Titillium Web;
+  font-size: 2em;
+  color: #497174;
+  margin-bottom: 0;
+}
+
+#footerPara{
+  color: #497174;
+  margin-bottom: 2em;
+}
+.testbutton {
+  text-decoration: none;
+  font-family: 'comic sans ms';
+  color: #FFFF73 !important;
+  font-size: 15px;
+  text-shadow: 0px 0px 0px #7CACDE;
+  box-shadow: 1px 1px 10px #F9F9F9;
+  padding: 3px 6px;
+  border-radius: 5px;
+  border: 1px groove #3866A3;
+  background: #3792EE;
+  background: linear-gradient(to top, #3792EE, #80BACF);
+}
+.testbutton:hover {
+  color: #FFFFFF !important;
+  background: #468CCF;
+}
+#footerCopyright{
+  color: white;
+  width: 50%;
+  margin: 2em auto 0 auto;
+  margin-bottom: 0;
+  background-color: #497174;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+}
