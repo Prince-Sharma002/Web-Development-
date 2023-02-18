@@ -12,5 +12,5 @@
   initial-scale means deafult zoom level when page is loaded initailly 
   minimum-scale means minimum zoom out possible( zoom out - use to view larger of element )  .
   
-- To divide a div using tailwind css use flex auto with width property where w-64 means 64% width.
+- To divide a div using tailwind css use flex auto with width property inside css and you can also use important property .
 - 
