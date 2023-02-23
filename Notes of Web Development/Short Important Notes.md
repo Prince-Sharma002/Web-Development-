@@ -13,4 +13,4 @@
   minimum-scale means minimum zoom out possible( zoom out - use to view larger of element )  .
   
 - To divide a div using tailwind css use flex auto with width property inside css and you can also use important property .
-- 
+- justify-between to create equal space between elements in flex  eg-one element of left and one element on rightmost.
