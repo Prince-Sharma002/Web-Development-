@@ -16,3 +16,4 @@
 - justify-between to create equal space between elements in flex  eg-one element of left and one element on rightmost.
 - use shrink to not change in size of element in flex
 - to change value according to you use bracket in tailwind eg- w-[ 70%]  
+- you can also use negative positioning in positioning eg- in absolute use bottom : -2px 
