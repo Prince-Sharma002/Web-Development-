@@ -17,3 +17,4 @@
 - use shrink to not change in size of element in flex
 - to change value according to you use bracket in tailwind eg- w-[ 70%]  
 - you can also use negative positioning in positioning eg- in absolute use bottom : -2px 
+- to create transition on hover use which attribute transition and change in hover and in element use transition : change_attribute_name time transition_type   
