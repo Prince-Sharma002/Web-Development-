@@ -1,0 +1,24 @@
+body{
+	color: white;
+	background-color: rgb(32, 32, 32);
+	padding: 0%;
+	margin: 0%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+	min-height: 40rem;
+}
+
+.animSec{
+	opacity: 0;
+	transform: translate(0px , 0px ) ;
+	transition: all 3s;
+}
+
+/* this class add when observer target or observe this section and animation perform while obderving */
+.appear{
+	opacity: 1;
+	transform: translate(100px , 0px);
+}
+
