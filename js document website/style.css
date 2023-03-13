@@ -1,0 +1,236 @@
+body{
+	background-color: rgb(0, 0, 0);
+	color: white;
+	margin: 0;
+	padding: 0%;
+	overflow-x: hidden;
+}
+
+/* navbar */
+.navbar{
+	box-shadow: 0 4px 6px rgb(0, 0, 0 , 0.1);
+	z-index: 13;
+	transition: top 2s;
+}
+
+
+.barButton{
+	background-color: #FB2576;
+	border: 4px solid rgb(0, 0, 0);
+	border-radius: 100%;
+	opacity: 100%;
+}
+
+.dropDown{
+	min-height: 100vh;
+	min-width: 100vh;
+	padding: 0%;
+	display: none;
+	text-align: center;
+}
+
+/* header */
+
+.headerContent{
+	background-image:url("https://media3.giphy.com/media/B6IBrYTyvo1UJOXF9u/giphy.gif?cid=ecf05e47qeu33vs0qez87yqwx5tzzjwi5p8xqqprcr7uu4bg&rid=giphy.gif&ct=g");;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.headerContent::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.8; /* Change opacity here */
+  }
+
+.headerHeading , .headerPara , .docButton{
+	position: relative;
+	z-index: 1;
+	color: white;
+	opacity: 0;
+	transition: all 1s;
+	transform: translateY(0);
+}
+
+.headerInnerContent button {
+	color: #000000;
+}
+
+
+.appear{
+	opacity: 1;
+	transform: translateY(4rem);
+	-webkit-transform: translateY(4rem);
+	-moz-transform: translateY(4rem);
+	-ms-transform: translateY(4rem);
+	-o-transform: translateY(4rem);
+}
+
+/* details */
+.detailOuterDiv{
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.detailOuterDiv::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.6; /* Change opacity here */
+  }
+
+.detail{
+	position: relative;
+	z-index: 1;
+	color: white;
+	opacity: 0;
+	transform: translateX(-30px);
+	transition: all 1s;
+}
+
+.leftTransition{
+	opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+.detail div h1{
+	border-left: 3px solid #FB2576 ;
+}
+
+/* detail 2 */
+.detail2{
+	position: relative;
+	z-index: 1;
+	color: white;
+	opacity: 0;
+	transform: translateX(30px);
+	transition: all 1s;
+	-webkit-transform: translateX(30px);
+	-moz-transform: translateX(30px);
+	-ms-transform: translateX(30px);
+	-o-transform: translateX(30px);
+}
+
+.rightTransition{
+	opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+.detail2 div h1{
+	border-right: 3px solid #FB2576 ;
+}
+
+/* stats */
+.barDiv{
+	background-color:#FB2576 ;
+}
+.dataHeading{
+	position: relative;
+	opacity: 0;
+	transition: all 2s;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-ms-transition: all 2s;
+	-o-transition: all 2s;
+}
+
+.barDiv{
+	position: relative;
+	left: 2%;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+
+/* developement */
+.leftContent{
+	opacity: 0;
+	transform: translateX(-40px);
+	transition: all 1s;
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-40px);
+	-ms-transform: translateX(-40px);
+	-o-transform: translateX(-40px);
+}
+
+.rightContent{
+	opacity: 0;
+	transform: translateX(20px);
+	transition: all 1s;
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	-o-transform: translateX(20px);
+}
+
+
+/* footer */
+.footer{
+	background-image: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?w=740&t=st=1678598877~exp=1678599477~hmac=932843867c6b54bffd6d1bb9ec95041e4be7cfc3d992050d3663eaadd3d5482c");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.9; /* Change opacity here */
+  }
+
+  .footerChild{
+	z-index: 4;
+	position: relative;
+	color: rgb(255, 255, 255);
+  }
+
+.emailBox{
+	position: relative;
+	z-index: 4;
+	background-color: transparent;
+	border: 1px rgb(6 182 212) solid;
+	height: 3rem;
+}
+.emailBox:focus{
+	outline: none;
+	border: 3px rgb(6 182 212) solid;
+}
+
+.emailBox::placeholder{
+	color: rgb(255, 255, 255);
+	font-size: 1rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.footest{
+	width: 100%;
+	position: relative;
+}
+
